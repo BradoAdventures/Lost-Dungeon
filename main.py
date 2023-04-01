@@ -257,7 +257,7 @@ def gearChestRoom():
         print("Options: open chest, or back")
         userInput = input()
         if userInput == "open chest":
-            print(Gear[0,4])
+            print(Gear[0:5])
             print("Returning to the room of slain chickens")
             armour = True
             emptyRoom1()
