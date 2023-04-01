@@ -18,7 +18,7 @@ happened = ["joined a simp legion", "payed my newb taxes", "got lured into the w
             "House engulfed on itself, Giant Massacre"]
 
 weapons = ["Mythical Dagger", "Mythical Whip", "Mythical Scimitar", "Mythical Short Bow", "Mythical long Bow"]
-Gear = "Mythical Helmet", "Mythical Platebody", "Mythical Legs", "Mythical Gloves", "Mythical Boots"
+Gear = ["Mythical Helmet", "Mythical Platebody", "Mythical Legs", "Mythical Gloves", "Mythical Boots"]
 
 Fortune = ["Special touches have been planned with you in mind.", "before you recieve, you must give.",
            "Bend the rod while it is still hot.", "Don't stop meow!",
@@ -257,7 +257,7 @@ def gearChestRoom():
         print("Options: open chest, or back")
         userInput = input()
         if userInput == "open chest":
-            print(f"Phenomenal, you've found", Gear)
+            print(Gear[0:5])
             print("Returning to the room of slain chickens")
             armour = True
             emptyRoom1()
